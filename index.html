@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sold - PrintCV.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #1a1d2b;
+        }
+
+        .card {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .status-icon {
+            font-size: 4rem;
+            color: #27ae60;
+            margin-bottom: 20px;
+            animation: scaleIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .domain-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #4361ee;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .sold-badge {
+            background-color: #27ae60;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #1a1d2b;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid #eee;
+            padding: 12px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .contact-link:active {
+            background-color: #f9f9f9;
+            transform: scale(0.98);
+        }
+
+        @keyframes scaleIn {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        /* تحسينات إضافية للشاشات الصغيرة جداً */
+        @media (max-width: 360px) {
+            h1 { font-size: 1.5rem; }
+            .status-icon { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="status-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        
+        <span class="domain-name">PrintCV.com</span>
+        
+        <div class="sold-badge">تم البيع | SOLD</div>
+        
+        <h1>شكراً لثقتكم</h1>
+        
+        <p>نحيطكم علماً بأنه قد تم بيع هذا الموقع والنطاق بنجاح لمشتري جديد.</p>
+        
+        <a href="https://wa.me/201023417237" class="contact-link">
+            <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.2rem;"></i>
+            للاستفسارات التجارية الأخرى
+        </a>
+    </div>
+
+</body>
+</html>
